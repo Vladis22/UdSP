@@ -1,7 +1,7 @@
 #ifndef CH_HEX_H
 #define CH_HEX_H
 
-int ch_hex_to_int(const char *hex);
-const char *ch_hex_from_int(int value);
+void ch_hexdump(const void *data, size_t size);
+void ch_hexdump_to(FILE* out, const char* label, const void *data, size_t size);
 
 #endif 
